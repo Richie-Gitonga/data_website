@@ -21,9 +21,9 @@ function Navbar() {
             <li className='p-4'>Contacts</li>
         </ul>
         <div onClick={handleNav} className='block md:hidden'>
-            { !nav ? <AiOutlineClose size={25}/> : <AiOutlineMenu size={25}/>}
+            { nav ? <AiOutlineClose size={25}/> : <AiOutlineMenu size={25}/>}
         </div>
-        <div className={ !nav ? 'fixed left-0 top-0 w-[60%] h-full bg-[#000300] border-r border-r-gray-800' : 'fixed left-[100%]'} >
+        <div className={ nav ? 'fixed left-0 top-0 w-[60%] h-full bg-[#000300] border-r border-r-gray-800' : 'fixed left-[100%]'} >
              <h1 className='w-full text-3xl font-bold text-[#00df9a] px-2 py-4'>React</h1>
             <ul>
                 <li className='p-4 border-b border-b-gray-800'>Home</li>
